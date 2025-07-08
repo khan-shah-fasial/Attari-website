@@ -358,8 +358,41 @@ class CourseController extends Controller
     }
 
 
+    // ------------------------- Aditional Seo Section ------------------------- //
 
+    public function seo_update(Request $request) {
+        // Validate form data
+        $validator = Validator::make($request->all(), [
+            'title' => 'required',
+            'description' => 'required',
+        ]);
 
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => false,
+                'notification' => $validator->errors()->all()
+            ], 200);
+        } 
+
+        // Update the SEO fields
+        $id = $request->input('id');
+        $course = Course::find($id);
+
+        $course->seo_label = $request->input('title');
+        $course->seo_description = $request->input('description');
+
+        $course->save();
+
+        store_log($sentence = 'Updated Additional SEO Details by Course ' . $course->name);
+
+        $response = [
+            'status' => true,
+            'notification' => 'SEO Details updated successfully!',
+        ];
+    
+        return response()->json($response);
+    }   
+        
 
 
 

@@ -85,6 +85,12 @@
 				</li>
 			@endif
 
+			@if(in_array(auth()->user()->role_id, [1, 2]))
+				<li class="nav-item">
+					<a class="nav-link spl_active @if( $section == 'additional-seo') active2 @endif" aria-current="page" href="{{ url(route('course.edit',['id' => $course->id, 'section' => 'additional-seo'])) }}">Additional SEO</a>
+				</li>
+			@endif
+
 		
 		</ul>
 
@@ -115,6 +121,8 @@
 		@include('backend.pages.course.section.practice_test.practice_test_index')
 	@elseif($section && $section == 'book_guides')
 		@include('backend.pages.course.section.book_guides.book_guides_index')
+	@elseif($section && $section == 'additional-seo')
+		@include('backend.pages.course.section.seo.seo_index')
 	@else
 		no page
 	@endif

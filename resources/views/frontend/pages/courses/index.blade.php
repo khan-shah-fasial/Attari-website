@@ -1056,6 +1056,23 @@
                         @endif
                     </div>
 
+
+                    <div class="row" >
+
+                        @if(!empty($detail->seo_label) && !empty($detail->seo_description))
+                            <div class="location_box text-center">
+                                <h2 id="seoHeading" style="cursor: pointer; display: inline-block;">
+                                    {{ $detail->seo_label }}
+                                </h2>
+                                <div id="seoDescription" class="d-none mt-3" style="display: inline-block; text-align: left;">
+                                    @php echo html_entity_decode($detail->seo_description) @endphp
+                                </div>
+                            </div>
+                        @endif
+
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -1243,6 +1260,18 @@ window.scrollTo(0, 0);
         }
     });
   </script>  
-    
+        
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const heading = document.getElementById("seoHeading");
+            const description = document.getElementById("seoDescription");
+
+            if (heading && description) {
+                heading.addEventListener("click", function () {
+                    description.classList.toggle("d-none");
+                });
+            }
+        });
+    </script>
 
 @endsection
