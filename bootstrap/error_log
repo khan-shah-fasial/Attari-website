@@ -1,0 +1,8 @@
+[15-Jul-2024 18:48:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Application" not found in /home/attariclasses/public_html/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/bootstrap/app.php on line 14
+[19-Jul-2024 18:54:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Application" not found in /home/attariclasses/public_html/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/bootstrap/app.php on line 14

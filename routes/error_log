@@ -1,0 +1,40 @@
+[15-Jul-2024 18:51:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/attariclasses/public_html/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/api.php on line 17
+[15-Jul-2024 18:51:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/attariclasses/public_html/routes/backend.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/backend.php on line 62
+[15-Jul-2024 18:51:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/attariclasses/public_html/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/channels.php on line 16
+[15-Jul-2024 18:51:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/attariclasses/public_html/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/console.php on line 17
+[15-Jul-2024 18:51:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/attariclasses/public_html/routes/web.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/web.php on line 26
+[19-Jul-2024 18:59:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/attariclasses/public_html/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/api.php on line 17
+[19-Jul-2024 18:59:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/attariclasses/public_html/routes/backend.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/backend.php on line 62
+[19-Jul-2024 18:59:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/attariclasses/public_html/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/channels.php on line 16
+[19-Jul-2024 18:59:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/attariclasses/public_html/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/console.php on line 17
+[19-Jul-2024 18:59:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/attariclasses/public_html/routes/web.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/routes/web.php on line 26

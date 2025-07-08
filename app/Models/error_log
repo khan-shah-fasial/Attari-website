@@ -1,0 +1,8 @@
+[04-Aug-2024 11:55:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/attariclasses/public_html/app/Models/Blog.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/app/Models/Blog.php on line 8
+[04-Aug-2024 11:55:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/attariclasses/public_html/app/Models/Learnings.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/attariclasses/public_html/app/Models/Learnings.php on line 8
