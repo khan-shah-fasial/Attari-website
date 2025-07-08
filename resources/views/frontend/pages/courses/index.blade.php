@@ -1060,12 +1060,16 @@
                     <div class="row" >
 
                         @if(!empty($detail->seo_label) && !empty($detail->seo_description))
+                            @php 
+                                $seo_label = ReplaceKeyword($detail->seo_label, $cms->replace_keyword); 
+                                $seo_description = ReplaceKeyword($detail->seo_description, $cms->replace_keyword);
+                            @endphp
                             <div class="location_box text-center">
                                 <h2 id="seoHeading" style="cursor: pointer; display: inline-block;">
-                                    {{ $detail->seo_label }}
+                                    {{ $seo_label }}
                                 </h2>
                                 <div id="seoDescription" class="d-none mt-3" style="display: inline-block; text-align: left;">
-                                    @php echo html_entity_decode($detail->seo_description) @endphp
+                                    @php echo html_entity_decode($seo_description) @endphp
                                 </div>
                             </div>
                         @endif
